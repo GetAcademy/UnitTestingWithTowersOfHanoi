@@ -22,11 +22,13 @@
  * Unit testing
  *  - Teste klasser vs teste funksjoner (som i M1): tilstand!
  *  - Korrekthet og kvalitet, unit testene er mine soldater som forsvarer min kode
+ *  - Raskere og bedre feilsøking
+ *  - Teste private vs public
  *  - Unit testing som en måte å forstå objektorientering på
- *  - Testdrevet utvikling
+ *  - Testdrevet utvikling - TDD
  *  - Test coverage
  *  - Automatisk testing: CI - Continous Integration
- *
+
  */
 
 using UnitTestingWithTowersOfHanoi;

@@ -20,10 +20,17 @@
             firstStack.Push(2);
             firstStack.Push(1);
         }
+
         public bool Move(int fromIndex, int toIndex)
         {
-            var number = _stacks[fromIndex].Pop();
-            _stacks[toIndex].Push(number);
+            var fromStack = _stacks[fromIndex];
+            var toStack = _stacks[toIndex];
+            var fromNumber = fromStack.Peek();
+            //var toNumber = toStack.Peek();
+            var hasNumbers = toStack.TryPeek(out int toNumber);
+            if (hasNumbers && toNumber < fromNumber) return false;
+            fromStack.Pop();
+            toStack.Push(fromNumber);
             return true;
         }
 
